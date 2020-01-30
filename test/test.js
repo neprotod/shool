@@ -1,4 +1,4 @@
-const chai = require('chai');
+/*const chai = require('chai');
 const expect = chai.expect;
 const chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
@@ -30,4 +30,4 @@ describe(('file to be test'), () => {
       console.log(testFunction());
     });
   });
-});
+});*/

@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha test --recursive --exit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.0",
     "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "joi-objectid": "^3.0.1",
     "mongoose": "^5.8.9",
     "sinon": "^8.1.1"
   },
@@ -18,8 +23,10 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "mocha": "^7.0.0",
+    "mock-req-res": "^1.1.4",
     "nodemon": "^2.0.2",
     "rewire": "^4.0.1",
-    "sinon-chai": "^3.4.0"
+    "sinon-chai": "^3.4.0",
+    "supertest": "^4.0.2"
   }
 }
